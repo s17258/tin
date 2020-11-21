@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>Biblioteka</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header><img src="img/books-521812297.jpg" alt="logo"><h1>Biblioteka</h1></header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="books.html">Książki</a></li>
+				<li><a href="reservations.html">Rezerwacje</a></li>
+				<li><a href="users.html">Użytkownicy</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Dodaj wypożyczenie</h2>
+			<form class="form">
+				<div class="form-group">
+					<label for="search">Wyszukaj użytkownika:</label>
+					<input type="search" id="search" name="search" value="john">
+				</div>
+				<input class="btn-history" type="submit" value="Szukaj">
+
+			</form>
+			</br>
+			<table style="width:100%" class="table-list">
+				<tr>
+					<th>Imię i nazwisko</th>
+					<th>Email</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>John Doe</td>
+					<td>johndoe@live.com</td>
+					<td>
+						<ul class="list-actions">
+							<li><a class="btn-history" href="#">Wybierz</a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>John Bon Jovi</td>
+					<td>jbj@gmail.com</td>
+					<td>
+						<ul class="list-actions">
+							<li><a class="btn-history" href="#">Wybierz</a></li>
+						</ul>
+					</td>
+				</tr>
+				
+			</table>
+			<p>
+				<a class="btn-cancel" href="users.html">Wróć</a> 
+			</p>
+		</main>
+		<footer>Aliaksandr Shyleika, s17258</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>Biblioteka</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header><img src="img/books-521812297.jpg" alt="logo"><h1>Biblioteka</h1></header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="books.html">Książki</a></li>
+				<li><a href="reservations.html">Rezerwacje</a></li>
+				<li><a href="users.html">Użytkownicy</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Szczegóły użytkownika</h2>
+			<form class="form">
+				<div class="form-group">
+					<label for="imie">Imię:<sup>*</sup></label>
+					<input type="text" name="imie" id="imie" disabled value="Aliaksandr">
+				</div>
+				<div class="form-group">
+					<label for="nazwisko">Nazwisko:<sup>*</sup></label>
+					<input type="text" name="nazwisko" id="nazwisko" disabled value="Shyleika">
+				</div>
+				<div class="form-group">
+					<label for="email">Email:<sup>*</sup></label>
+					<input type="email" name="email" id="email" disabled value="ashyleika@live.com">
+				</div>
+				<div class="form-group">
+					<label for="pesel">Pesel:<sup>*</sup></label>
+					<input type="text" name="pesel" id="pesel" disabled value="92073011111">
+				</div>
+
+				<div class="form-buttons">
+					<a href="user-update.html" class="btn-submit" type="submit" value="Edytuj">Edytuj</a>
+				   
+				</div> 
+			</form>
+			<h2>Historia wypożyczeń</h2>
+			<hr>
+			<table style="width:100%" class="table-list">
+				<tr>
+					<th>Książka</th>
+					<th>Pożyczona</th>
+					<th>Zwrócona</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Java Concurrency in practice</td>
+					<td>05-07-2020</td>
+					<td></td>
+					<td>
+						<ul class="list-actions">
+							<li><a class="btn-history" href="#">Zwróć</a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Scala for impacient</td>
+					<td>01-04-2020</td>
+					<td>30-06-2020</td>
+					<td><ul class="list-actions">
+							<li><a class="btn-history" href="#">Pożycz</a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Learning Spark</td>
+					<td>11-02-2020</td>
+					<td>24-03-2020</td>
+					<td>
+						<ul class="list-actions">
+							<li><a class="btn-history" href="#">Pożycz</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<p>
+				<a class="btn-cancel" href="users.html">Wróć</a> 
+			</p>
+		</main>
+		<footer>Aliaksandr Shyleika, s17258</footer>
+	</div>
+</body>
+</html>

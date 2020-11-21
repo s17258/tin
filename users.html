@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>Biblioteka</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header><img src="img/books-521812297.jpg" alt="logo"><h1>Biblioteka</h1></header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="books.html">Książki</a></li>
+				<li><a href="reservations.html">Rezerwacje</a></li>
+				<li><a href="users.html">Użytkownicy</a></li>
+			</ul>
+		</nav>
+		<main>
+			<form>
+				<input type="search" id="search" name="search">
+				<input class="btn-history" type="submit" value="Szukaj">
+			</form>
+			<h2>Lista użytkowników</h2>
+			<table style="width:100%" class="table-list">
+				<tr>
+					<th>Imię i nazwisko</th>
+					<th>Email</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Aliaksandr Shyleika</td>
+					<td>ashyleika@live.com</td>
+					<td>
+						<ul class="list-actions">
+							<li><a class="btn-history" href="user-details.html">Szczegóły</a></li>
+							<li><a class="btn-borrow"  href="user-update.html">Edytuj</a></li>
+							<li><a class="btn-delete"  href="#">Usuń</a></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>John Bon Jovi</td>
+					<td>jbj@gmail.com</td>
+					<td>
+						<ul class="list-actions">
+							<li><a class="btn-history" href="user-details.html">Szczegóły</a></li>
+							<li><a class="btn-borrow"  href="user-update.html">Edytuj</a></li>
+							<li><a class="btn-delete"  href="#">Usuń</a></li>
+						</ul>
+					</td>
+				</tr>
+				
+			</table>
+			<p>
+				<a href="add-user-form.html" class="btn-add">Dodaj nowego użytkownika</a>
+			</p>
+		</main>
+		<footer>Aliaksandr Shyleika, s17258</footer>
+	</div>
+</body>
+</html>
